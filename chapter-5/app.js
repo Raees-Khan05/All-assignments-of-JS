@@ -191,3 +191,75 @@ var obtainMarks = 804
 percentage =   obtainMarks / totalMarks
 
 document.write(`<h4>Percentage ${percentage}</h4>`)
+
+
+
+document.write(`<h1>9th task</h1>`)
+
+
+var usDollars = 10
+var saudiRiyals = 25
+
+
+var convertUsdToPkr = 104.80
+var convertSaudiRiyalToPkr = 28
+
+
+var conversion = (usDollars * convertUsdToPkr) + (saudiRiyals * convertSaudiRiyalToPkr)
+
+document.write(`<h4>Amount after conversion in Pakistani Rupees is ${conversion}</h4>`)
+
+
+
+
+document.write(`<h1>10th task</h1>`)
+
+var valueOfNum = 10
+
+var arithmaticOperations = valueOfNum  + 5 * 10 / 2
+
+document.write(arithmaticOperations)
+
+
+
+document.write(`<h1>Task No 11</h1>`)
+
+
+var currentYear = 2024
+var birthYear = 2008
+
+document.write(`<h5>Your current age is ${currentYear}</h5>`)
+document.write(`<h5>Your birth year is ${birthYear}</h5>`)
+
+
+var calculate = currentYear - birthYear
+
+document.write(`<h5>Your exact age is ${calculate}</h5>`)
+
+
+
+
+// document.write(`<h1>Task No 12</h1>`)
+
+// var favSnack = 'Lays'
+//  var myOriginalAge = 15
+//  var maxAge = 65
+//  var estimatedAmountPerDay = 3
+
+//  var totalAge = maxAge - myOriginalAge
+// //  var totalDaysRemaining = totalAge * 365
+
+//  var finalResult = totalAge * 365 * estimatedAmountPerDay
+//  console.log(finalResult )
+
+document.write(`<h1>taskno 12</h1>`)
+
+var radius = 20
+
+var circumferrence = 2 * 3.142 * radius
+
+var area = 3.142 * radius * radius
+
+document.write(`<h4>Radius is: ${radius}</h4>`)
+document.write(`<h4>Circumferrence is: ${circumferrence}</h4>`)
+document.write(`<h4>Area is: ${area}</h4>`)
