@@ -1,65 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All JAVASCRIPT ASSIGNMENTS</title>
 
     <style>
-        body{
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        h2{
-            text-align: center;
-        }
-        p > a{
-             text-decoration: none;
-             
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          
         }
 
-        p{
+        h2 {
             text-align: center;
+        }
+
+        p>a {
+            text-decoration: none;
+
+            color: black;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .main{
+            width: 130px;
+            height: 70px;
+            border: none;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.589);
+            /* border-bottom: 1px solid rgba(0, 0, 0, 0.589); */
+            /* border-top: 1px solid rgba(0, 0, 0, 0.589); */
+            margin-bottom: 9px;
+            color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 10px;
+        }
+
+        .main > p{
+            text-align: center;
+        }
+
+        .main:hover{
+            background-color: rgba(128, 128, 128, 0.397);
+            transition: 0.3s;
+            transform: scale(1.2);
+            
+        }
+
+        a:hover{
+            color: white;
+        }
+        
+        main > p > a:hover{
+        color: white;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            
+            width: 1000px;
+            height: 300px;
+            /* background-color: aqua; */
         }
     </style>
 </head>
+
 <body>
-    
+
 
     <h2>MY ALL ASSIGNMENTS OF JS</h2>
+    
+    <div class="parent">
+        
 
-    <p>
-        <a href="chapter-1/index.html">CHAPTER_1</a>
-    </p>
-
-    <p>
-        <a href="chapter-2/index.html">CHAPTER_2</a>
-    </p>
-
-    <p>
-        <a href="chapter-3/index.html">CHAPTER_3</a>
-    </p>
-
-    <p>
-        <a href="chapter-4/index.html">CHAPTER_4</a>
-    </p>
-
-    <p>
-        <a href="chapter-5/index.html">CHAPTER_5</a>
-    </p>
-    <p>
+        <div class="main">
+            <p>
+                <a href="chapter-1/index.html">CHAPTER_1</a>
+        </p>
+    </div>
+    
+    <div class="main">
+        <p>
+            <a href="chapter-2/index.html">CHAPTER_2</a>
+        </p>
+    </div>
+    
+    <div class="main">
+        <p>
+            <a href="chapter-3/index.html">CHAPTER_3</a>
+        </p>
+    </div> 
+    
+    <div class="main">
+        <p>
+            <a href="chapter-4/index.html">CHAPTER_4</a>
+        </p>
+    </div>
+    
+    <div class="main">
+        <p>
+            <a href="chapter-5/index.html">CHAPTER_5</a>
+        </p>
+    </div>
+    
+    <div class="main">
+        <p>
         <a href="chapter-6 to 9/index.html">CHAPTER_6 TO 9</a>
     </p>
+</div>
+
+<div class="main">
     <p>
         <a href="chapter- 9 to 11/index.html">CHAPTER_9 TO 11</a>
     </p>
+</div>
+
+<div class="main">
     <p>
-        <a href="chapter-12 to 13/index.html">CHAPTER_12 TO 13</a>
+        <a href="chapter-12 to 13/index.html">CHAPTER_12 TO 13 </a>
     </p>
+</div>
+
+<div class="main">
     <p>
         <a href="chapter-14 to 16/index.html">CHAPTER_14 TO 16</a>
     </p>
+</div>
+
+<div class="main">
     <p>
         <a href="chapter-17 to 20/index.html">CHAPTER_17 TO 20</a>
     </p>
+</div>
+
+  <div class="main">
+    <p>
+        <a href="Practice exercise/index.html">PRACTICE WORK</a>
+    </p>
+</div>
+
+</div>
+
+
+
 </body>
+
 </html>
