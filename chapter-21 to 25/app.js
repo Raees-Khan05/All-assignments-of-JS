@@ -50,41 +50,90 @@ alert("length of string is : " + usersInput.length)
 
           var name = "Pakistani"
 
-         var index = -1
-
-          for (let i = 0; i < name.length; i++) {
-            if (name[i] === "n") {
-                index = i
-                break
-            }
-            
-          }
-
-          if (index !== -1) {
-            console.log("The index of","n", "is:", index);
-        } else {
-            console.log("n", "is not in the array.");
-        }
+          console.log("index number of letter n is " , name.indexOf("n"))
 
 
 
   // question no 4 , 5 , 6 , 7 , 8 , 9 are remaining
   
   
+   // task no 04 
+
+
+   // Write a program to find the last index of letter “l” in the
+   // word “Hello World” and display the result in your browser.
+
+
+   var Greet = "hello world"
+
+   console.log("last index of letter l in hello world is" , Greet.lastIndexOf("l"))
+
+
+ // task no 05
+
+
+//  Write a program to find the character at 3rd index in the
+// word “Pakistani” and display the result in your browser.
+
+
+
+   var character = "Pakistani"
+
+   console.log(character.charAt(3))
+
+
+   // tasl no 06
+
+   // Repeat Q1 using string concat() method.
+
+
+
+
+
+
+
 
   // question no 07
 
 
-  //Page 3 of 9
+  
 // 7. Write a program to replace the “Hyder” to “Islam” in the
 // word “Hyderabad” and display the result in your browser.
 
 
-// var word = 'hyderabad'
+      var wordd = 'hyderabad'
+
+     console.log(wordd.replace("hyder" , "islam"))
 
 
 
 
+// task no 08 
+
+// Write a program to replace all occurrences of “and” in the
+// string with “&” and display the result in your browser.
+// var message = “Ali and Sami are best friends. They play cricket and
+// football together.”;
+
+
+
+   var message = "ali and sami are best friends. they play cricket and football together"
+
+   console.log(message.replaceAll("and" , "&"))
+
+
+
+   // task no 09 
+
+
+   // Write a program that converts a string “472” to a number
+   // 472. Display the values & types in your browser.
+
+
+     var str = "472"
+     var num = Number(str)
+
+     console.log(num)
 
 
 
@@ -114,37 +163,120 @@ console.log(user_Input.toUpperCase())
 
 
 
+ // task no 12 
+
+
+//  // Write a program that converts the variable num to
+// string.
+// var num = 35.36 ;
+// Remove the dot to display “3536” display in your browser.
 
 
 
 
- // task no 17
+       var numBer = 3536
+       
+       var convert = String(numBer)
+
+       console.log(convert)
+
+       console.log(typeof(convert))
+
+
+
+   // task no 13
+   // remaining
+
+//      Write a program to take user input and store username
+// in a variable. If the username contains any special symbol
+// among [@ . , !], prompt the user to enter a valid username.
+// For character codes of [@ .
+
+// Note:
+// ASCII code of ! is 33
+// ASCII code of , is 44
+// ASCII code of . is 46
+// ASCII code of @ is 64 
+
+
+
+       
+
+
+
+  // task no 14
+
+  // You have an array
+// A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an
+// array. After searching, prompt the user whether the given
+// item is found in the list or not.
+// Note: Perform case insensitive search. Whether the user
+// enters cookie, Cookie, COOKIE or coOkIE, program
+// should inform about its availability. Example:
+
+
+
+     var array  = ['cake', 'apple pie', 'cookie' , 'chips' , "patties"]
+
+var userInfo = prompt('Enter the item you required')
+
+for (var i = 0; i < array.length; i++) {
+    if (userInfo.toLowerCase() == array[i].toLowerCase()) {
+        alert("item is available")
+        break
+    }else{
+      alert("item is not available")
+      break
+    }
+}
+
+
+
+  // task no 15
+  // remaining
+
+
+   
+
+
+
+
+
+
+   // task no 16
+   // remaining
+//    // Write a program to convert the following string to an
+// array using string split method.
+// var university = “University of Karachi”;
+// Display the elements of array in your browser.
+
+
 
 
  // Write a program to display the last character of a user input.
 
 
-   var country = "Pakistan"
+   var country = prompt("enter your input")
 
-   console.log("last character of input is: " +  country[7])
+   console.log("last character of input is: " +  country.charAt())
 
-//    for (let i = 0; i < country.length; i++) {
-        
-//     console.log(country[7])
-    
-//    }
+//    task no 18
 
+var sentence = "The quick brown fox jumps over the lazy dog";
 
+var lowerCaseSentence = sentence.toLowerCase();
 
+var words = lowerCaseSentence.split(" ");
 
+var count = 0;
+words.forEach(function(word) {
+    if (word === "the") {
+        count++;
+    }
+});
 
-
-
-
-
-
-
-
+console.log("Number of occurrences of 'the': " + count);
 
 
 
