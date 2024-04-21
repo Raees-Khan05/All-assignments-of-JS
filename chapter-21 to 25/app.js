@@ -54,7 +54,6 @@ alert("length of string is : " + usersInput.length)
 
 
 
-  // question no 4 , 5 , 6 , 7 , 8 , 9 are remaining
   
   
    // task no 04 
@@ -88,6 +87,15 @@ alert("length of string is : " + usersInput.length)
 
 
 
+    
+var userFirstName = prompt("enter your first name").split(",")
+
+var userLastName = prompt("enter your last name").split(",")
+
+var fullName = userFirstName.concat(userLastName)
+
+alert(fullName)
+console.log(fullName)
 
 
 
@@ -235,6 +243,20 @@ for (var i = 0; i < array.length; i++) {
 
   // task no 15
   // remaining
+  
+
+  /* Write a program to take password as an input from
+user. The password must qualify these requirements:
+a. It should contain alphabets and numbers
+b. It should not start with a number
+c. It must at least 6 characters long
+If the password does not meet above requirements,
+prompt the user to enter a valid password.
+For character codes of a-z, A-Z & 0-9, refer to ASCII
+table at the end of this document.  /**
+ * 
+ */
+
 
 
    
@@ -252,14 +274,29 @@ for (var i = 0; i < array.length; i++) {
 // Display the elements of array in your browser.
 
 
+ var university = "University of Karachi"
+
+ var arr_Line = university.split(",")
+
+ console.log(arr_Line)
+
+
 
 
  // Write a program to display the last character of a user input.
 
 
-   var country = prompt("enter your input")
+var userInput_Country = prompt("enter your country name:");
 
-   console.log("last character of input is: " +  country.charAt())
+
+if (userInput_Country !== null && userInput_Country !== "") {
+    var lastCharacter = userInput_Country.slice(-1);
+    
+    console.log("The last character of the input is: " + lastCharacter);
+} else {
+    console.log("No input provided. Please try again.");
+}
+
 
 //    task no 18
 
