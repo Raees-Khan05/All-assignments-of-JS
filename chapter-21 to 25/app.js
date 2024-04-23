@@ -204,7 +204,16 @@ console.log(user_Input.toUpperCase())
 // ASCII code of ! is 33
 // ASCII code of , is 44
 // ASCII code of . is 46
-// ASCII code of @ is 64 
+// ASCII code of @ is 64
+
+
+      var userrInput = prompt("enter your username")
+
+      if (userrInput.includes("!") || userrInput.includes(",") || userrInput.includes(".") || userrInput.includes("@") ) {
+        alert("enter a valid username")
+      }else{
+        alert("ok bhaii... thanks")
+      }
 
 
 
@@ -258,6 +267,24 @@ table at the end of this document.  /**
  */
 
 
+let isValid = false;
+
+function getPassword() {
+    let password = prompt("Enter a password:");
+
+    if (password.length < 6 || password[0].match(/[0-9]/) || !(/[a-zA-Z]/).test(password) || !(/[0-9]/).test(password)) {
+       alert("Password is invalid. Please enter a valid password.");
+        getPassword();
+      } else {
+        alert("Password is valid.");
+        isValid = true;
+        
+    }
+}
+
+getPassword();
+
+
 
    
 
@@ -276,7 +303,7 @@ table at the end of this document.  /**
 
  var university = "University of Karachi"
 
- var arr_Line = university.split(",")
+ var arr_Line = university.split(" ")
 
  console.log(arr_Line)
 
